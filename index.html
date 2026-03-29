@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытка - Поздравления</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎉 Поздравления</h1>
+            <p class="subtitle">Создай свою волшебную открытку</p>
+        </header>
+
+        <!-- Main Card -->
+        <main class="main-content">
+            <div class="card-wrapper">
+                <div class="greeting-card" id="greetingCard">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="emoji" id="cardEmoji">🎂</span>
+                        </div>
+                        
+                        <h2 class="card-title" id="cardTitle">С днём рождения!</h2>
+                        
+                        <p class="card-message" id="cardMessage">
+                            Желаю тебе счастья, здоровья и воплощения всех мечт!
+                        </p>
+
+                        <div class="card-footer">
+                            <p class="card-signature" id="cardSignature">С любовью</p>
+                            <div class="confetti"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customization Panel -->
+            <div class="customization-panel">
+                <h3>✏️ Редактирование открытки</h3>
+                
+                <div class="form-group">
+                    <label for="emojiSelect">Выбери эмодзи:</label>
+                    <select id="emojiSelect">
+                        <option value="🎂">🎂 День рождения</option>
+                        <option value="💍">💍 Свадьба</option>
+                        <option value="👶">👶 Рождение малыша</option>
+                        <option value="🎓">🎓 Выпускной</option>
+                        <option value="❤️">❤️ Валентин день</option>
+                        <option value="🎄">🎄 Новый год</option>
+                        <option value="🎊">🎊 Юбилей</option>
+                        <option value="💼">💼 Новая работа</option>
+                        <option value="🏠">🏠 Новый дом</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="titleInput">Заголовок:</label>
+                    <input 
+                        type="text" 
+                        id="titleInput" 
+                        placeholder="Введи заголовок открытки"
+                        value="С днём рождения!"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="messageInput">Сообщение:</label>
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Напиши поздравление..."
+                        rows="4"
+                    >Желаю тебе счастья, здоровья и воплощения всех мечт!</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="signatureInput">От кого:</label>
+                    <input 
+                        type="text" 
+                        id="signatureInput" 
+                        placeholder="Твоё имя"
+                        value="С любовью"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="colorSelect">Цвет открытки:</label>
+                    <div class="color-picker">
+                        <input type="color" id="colorSelect" value="#ff6b9d">
+                        <span id="colorValue">#ff6b9d</span>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button id="downloadBtn" class="btn btn-primary">📥 Скачать изображение</button>
+                    <button id="resetBtn" class="btn btn-secondary">🔄 Сбросить</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Открытка для поздравлений. Все права защищены. 💌</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
